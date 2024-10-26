@@ -312,6 +312,42 @@ body, html {
 }
 
 
+#page4 {
+    width: 100%;
+    height: 100%;
+    background-color:#060709;
+    padding: 6vw 18vw;
+}
+
+#page4 h1 {
+    font-family: "satoshi variable";
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+#box-service-page4 {
+    width: 100%;
+    height: 85%;
+    /* background-color: rgb(231, 87, 87); */
+    padding-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.boxser4 {
+    height: 16vw;
+    width: 31vw;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1.5vw;
+}
+
+
+
+
+
 #page5{
     width: 100%;
     height: 100%;
