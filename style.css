@@ -262,14 +262,14 @@ body, html {
 #page3 {
     width: 100%;
     height: 100%;
-    background-color: #d9d2d2c1;
+    background-color: #09050c;
     padding: 5vw 18vw;
   }
   
   #page3 h1 {
-    font-family: "satoshi variable";
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 4vw;
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0.5vw;
@@ -283,9 +283,9 @@ body, html {
   
   #page3-part1 p {
     font-size: 1vw;
-    font-family: "satoshi variable";
+    font-family: Arial, Helvetica, sans-serif;
     width: 60%;
-    color: black;
+    color: #ffffff;
   }
   
   #page3-part1 button {
@@ -304,11 +304,11 @@ body, html {
   }
   
   .boxser {
-    height: 16vw;
+    height: auto;
     width: 32%;
     margin-bottom: 30px;
-    background-color:  #d9d2d2c1; /* Black background for the service card */
-    border: 1px solid #333; /* Subtle border for better distinction */
+    background-color:  #231e23; /* Black background for the service card */
+    border: 1px solid #d47800; /* Subtle border for better distinction */
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
@@ -316,7 +316,7 @@ body, html {
   }
   
   .boxser:hover {
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red shadow on hover */
+    box-shadow: 0 0 20px #b36400; /* Red shadow on hover */
   }
   
   .boxser .icon {
@@ -333,12 +333,12 @@ body, html {
   .boxser .icon .fa {
     font-size: 40px;
     line-height: 60px;
-    color: #FE012B; /* Red icon color */
+    color: #e07f00; /* Red icon color */
     transition: all 0.3s ease;
   }
   
   .boxser:hover .icon {
-    background: red; /* Red background on hover */
+    background: #b36400; /* Red background on hover */
   }
   
   .boxser:hover .icon .fa {
@@ -348,15 +348,17 @@ body, html {
   .boxser h4 {
     font-size: 18px;
     margin-bottom: 15px;
-    color: rgb(17, 17, 17); /* White text color for the title */
+    color: #ffffff; /* White text color for the title */
     font-weight: 700;
     text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .boxser p {
     font-size: 16px;
-    color: rgb(10, 10, 10); /* White text color for the description */
+    color: #ffffff; /* White text color for the description */
     line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   
