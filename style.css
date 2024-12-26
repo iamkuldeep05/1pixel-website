@@ -262,89 +262,200 @@ body, html {
 #page3 {
     width: 100%;
     height: 100%;
-    background-color:#d9d2d2c1;
-    padding: 6vw 18vw;
-}
-
-#page3 h1 {
+    background-color: #d9d2d2c1;
+    padding: 5vw 18vw;
+  }
+  
+  #page3 h1 {
     font-family: "satoshi variable";
-    font-size: 5vw;
+    font-size: 4vw;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
-}
-
-#page3-part1 {
+    text-align: center;
+    margin-bottom: 0.5vw;
+  }
+  
+  #page3-part1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#page3-part1 p {
+  }
+  
+  #page3-part1 p {
     font-size: 1vw;
     font-family: "satoshi variable";
     width: 60%;
     color: black;
-}
-
-#page3-part1 button {
+  }
+  
+  #page3-part1 button {
     width: 8vw;
     height: 2vw;
     background-color: black;
     border: 2px solid rgb(254, 254, 254);
-}
-
-#box-service {
+  }
+  
+  #box-service {
     width: 100%;
-    height: 85%;
-    /* background-color: rgb(231, 87, 87); */
-    padding-top: 1vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-}
+  }
+  
+  .boxser {
+    height: 16vw;
+    width: 32%;
+    margin-bottom: 30px;
+    background-color:  #d9d2d2c1; /* Black background for the service card */
+    border: 1px solid #333; /* Subtle border for better distinction */
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .boxser:hover {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Red shadow on hover */
+  }
+  
+  .boxser .icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: white; /* White background for the icon circle */
+  }
+  
+  .boxser .icon .fa {
+    font-size: 40px;
+    line-height: 60px;
+    color: #FE012B; /* Red icon color */
+    transition: all 0.3s ease;
+  }
+  
+  .boxser:hover .icon {
+    background: red; /* Red background on hover */
+  }
+  
+  .boxser:hover .icon .fa {
+    color: white; /* White icon color on hover */
+  }
+  
+  .boxser h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: rgb(17, 17, 17); /* White text color for the title */
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  
+  .boxser p {
+    font-size: 16px;
+    color: rgb(10, 10, 10); /* White text color for the description */
+    line-height: 25px;
+  }
+  
+  
 
-.boxser {
-    height: 14vw;
-    width: 20vw;
-    background-color: rgb(0, 0, 0);
-    border-radius: 5%;
-}
-
-
-#page4 {
+  #page4 {
     width: 100%;
     height: 100%;
-    background-color:#060709;
+    background-color: #060709; /* Dark background */
     padding: 6vw 18vw;
-}
-
-#page4 h1 {
+  }
+  
+  #page4 h1 {
     font-family: "satoshi variable";
-    font-size: 5vw;
-    color: rgb(255, 255, 255);
+    font-size: 4vw;
+    color: rgb(255, 255, 255); /* White text */
     text-transform: uppercase;
-}
-
-#box-service-page4 {
+    padding-bottom: 1VW;
+  }
+  
+  #box-service-page4 {
     width: 100%;
-    height: 85%;
-    /* background-color: rgb(231, 87, 87); */
-    padding-top: 1vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.boxser4 {
-    height: 16vw;
-    width: 31vw;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 1.5vw;
-}
-
-
+  }
+  
+  .boxser4 {
+    height: auto;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .boxser4-link {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .boxser4-inner {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Image Styling */
+  .boxser4-img img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Overlay Styling */
+  .boxser4-inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 56, 56, 0.5); /* Red overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+  }
+  
+  /* Link Box Styling */
+  .boxser4-link-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 10;
+    background-color: rgb(247, 215, 215); /* Red background */
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .boxser4-link-box img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Hover Effects */
+  .boxser4-inner:hover::before {
+    opacity: 1; /* Show red overlay */
+  }
+  
+  .boxser4-inner:hover .boxser4-img img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .boxser4-inner:hover .boxser4-link-box {
+    opacity: 1; /* Show link box */
+  }
+  
 
 
 
