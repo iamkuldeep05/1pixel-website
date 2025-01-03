@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -366,35 +368,57 @@
 
     <div id="page5">
       <div id="page5-content">
-        <h1>Have A Project In Mind?</h1>
-        <h6>Want to collaborate and give wings to your dream project?</h6><br>
-        <h6>Let’s talk!</h6><br>
-        <button>Get a quote</button>
+          <h1>Have A Project In Mind?</h1>
+          <h6>Want to collaborate and give wings to your dream project?</h6><br>
+          <h6>Let’s talk!</h6><br>
+          <button id="get-quote-button">Get a quote</button>
       </div>
+
+      <!-- Contact Form Inside page5 -->
+      <div id="contact-form-content">
+          <h2>Contact Us</h2>
+          <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+
+              <button type="submit">Submit</button>
+              <button type="button" id="close-form">Close</button>
+          </form>
+      </div>
+
+      <!-- Footer Section -->
       <div id="footer">
-        <div id="footer-div1">
-          <div id="nav-logo">
-            <h1>1p<span>i</span>xel</h1>
-            <p>Pixel-Perfect Solutions for Businesses That Dare to Be Different</p>
-            <div class="underline"></div>
-            <p>OnePixel Technology Pvt. Ltd.</p>
-            <br>
-            <p>Copyright <span>&#169</span> 2024 OnePixel Technology Pvt. Ltd. All Rights Reserved.</p>
+          <div id="footer-div1">
+              <div id="nav-logo">
+                  <h1>1p<span>i</span>xel</h1>
+                  <p>Pixel-Perfect Solutions for Businesses That Dare to Be Different</p>
+                  <div class="underline"></div>
+                  <p>OnePixel Technology Pvt. Ltd.</p>
+                  <br>
+                  <p>Copyright <span>&#169</span> 2024 OnePixel Technology Pvt. Ltd. All Rights Reserved.</p>
+              </div>
           </div>
-        </div>
-        <div id="footer-div2">
-          <h3>Follow us on</h3>
-          <div id="footer-icons">
-            <i class="ri-instagram-line"></i>
-            <i class="ri-linkedin-box-line"></i>
-            <i class="ri-twitter-x-line"></i>
-            <i class="ri-facebook-circle-line"></i>
+          <div id="footer-div2">
+              <h3>Follow us on</h3>
+              <div id="footer-icons">
+                  <i class="ri-instagram-line"></i>
+                  <i class="ri-linkedin-box-line"></i>
+                  <i class="ri-twitter-x-line"></i>
+                  <i class="ri-facebook-circle-line"></i>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
 
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
   <script src="script.js"></script>
 </body>
 
